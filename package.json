@@ -1,0 +1,13 @@
+{
+    "name": "szjzs-dal",
+    "version": "0.0.1",
+    "main": "index.js",
+    "author": "kazetotori/fxqn",
+    "dependencies": {
+        "async-mysql":""
+    },
+    "files": [
+        "src",
+        "index.js"
+    ]
+}
