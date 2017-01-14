@@ -9,6 +9,8 @@ CREATE TABLE `patient`(
     `gender` BIT DEFAULT 1,
     `phone` VARCHAR(50) DEFAULT '',
     `address` VARCHAR(500) DEFAULT '',
-    `remark` VARCHAR(MAX) DEFAULT ''
+    `remark` VARCHAR(MAX) DEFAULT '',
+    PRIMARY KEY (`pid`),
+    FOREIGN KEY (`uid`) REFERENCES `user` (`uid`) ON DELETE NO ACTION ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 GO;

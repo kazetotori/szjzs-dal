@@ -1,0 +1,11 @@
+DROP TABLE `patient_times` IF EXISTS;
+GO;
+
+CREATE TABLE `patient_times` (
+    `tid` INTEGER AUTO_INCREMENT,
+    `pid` INTEGER NOT NULL,
+    `stamp` INT NOT NULL,
+    PRIMARY KEY (`tid`),
+    FOREIGN KEY (`pid`) REFERENCES `patient` (`pid`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+GO;
