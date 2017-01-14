@@ -1,0 +1,3 @@
+DROP TABLE `route` IF EXISTS;
+GO;
+
