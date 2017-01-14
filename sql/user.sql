@@ -14,6 +14,6 @@ CREATE TABLE `user`(
 ) Engine=InnoDB DEFAULT CHARSET=utf8;
 GO;
 
---超级管理员，用户名和密码为
+--超级管理员，用户名和密码为superadmin
 INSERT INTO `user`(`uname`,`pwd`) VALUES('889a3a791b3875cfae413574b53da4bb8a90d53e','889a3a791b3875cfae413574b53da4bb8a90d53e');
 GO;
